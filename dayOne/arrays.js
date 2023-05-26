@@ -1,5 +1,3 @@
-// listaDeCompras.js
-
 class ListaDeCompras {
     constructor() {
         this.itens = [];
@@ -7,8 +5,11 @@ class ListaDeCompras {
     }
 
     adicionarItem(produto, quantidade) {
-        this.itens.push(produto);
-        this.quantidades.push(quantidade);
+        if (this.validarProduto(produto) && this.validarQuantidade(quantidade)) {
+            this.itens.push(produto);
+            this.quantidades.push(quantidade);
+            console.log(`O produto "${produto}" foi adicionado à lista.`);
+        }
     }
 
     removerItem(produto) {
@@ -16,9 +17,9 @@ class ListaDeCompras {
         if (index !== -1) {
             this.itens.splice(index, 1);
             this.quantidades.splice(index, 1);
-            console.log(`O produto ${produto} foi removido da lista.`);
+            console.log(`O produto "${produto}" foi removido da lista.`);
         } else {
-            console.log(`O produto ${produto} não está na lista.`);
+            console.log(`O produto "${produto}" não está na lista.`);
         }
     }
 
@@ -28,9 +29,25 @@ class ListaDeCompras {
         } else {
             console.log("Lista de compras:");
             for (let i = 0; i < this.itens.length; i++) {
-                console.log(`${this.itens[i]} - ${this.quantidades[i]}`);
+                console.log(`${this.itens[i]} = ${this.quantidades[i]}`);
             }
         }
+    }
+
+    validarProduto(produto) {
+        if (typeof produto !== "string" || produto.trim() === "") {
+            console.log("Nome do produto inválido.");
+            return false;
+        }
+        return true;
+    }
+
+    validarQuantidade(quantidade) {
+        if (!Number.isInteger(quantidade) || quantidade <= 0) {
+            console.log("Quantidade inválida. Deve ser um número inteiro positivo.");
+            return false;
+        }
+        return true;
     }
 }
 
