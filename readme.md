@@ -6,25 +6,25 @@ Este repositório contém os desafios de estrutura de dados que foram realizados
 
 ### Day One
 
-- Descrição: Implementação de uma lista encadeada simples em C++
+- Descrição: Implementação de uma lista encadeada simples em JavaScript
 - Status: Pronta
 - Arquivo: [dayOne](./dayOne)
 
 ### Day Two
 
-- Descrição: Implementação de uma pilha em Python
+- Descrição: Implementação de uma pilha em JavaScript
 - Status: Pronta
 - Arquivo: [dayTwo](./dayTwo)
 
 ### Day Three
 
-- Descrição: Implementação de uma fila em Java
+- Descrição: Implementação de uma fila em JavaScript
 - Status: Pronta
 - Arquivo: [dayThree](./dayThree)
 
 ### Day Four
 
-- Descrição: Implementação de uma árvore binária de busca em C#
+- Descrição: Implementação de uma árvore binária de busca em JavaScript
 - Status: Pronta
 - Arquivo: [dayFour](./dayFour)
 
@@ -36,13 +36,13 @@ Este repositório contém os desafios de estrutura de dados que foram realizados
 
 ### Day Six
 
-- Descrição: Implementação de uma árvore AVL em C++
+- Descrição: Implementação de uma árvore AVL em JavaScript
 - Status: Pronta
 - Arquivo: [daySix](./daySix)
 
 ### Day Seven
 
-- Descrição: Implementação de um grafo dirigido em Python
+- Descrição: Implementação de um grafo dirigido em JavaScript
 - Status: Pronta
 - Arquivo: [daySeven](./daySeven)
 
